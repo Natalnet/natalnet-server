@@ -10,6 +10,6 @@ export class UsersController {
   @ApiProperty()
   @Post()
   create(@Body() user: CreateUserDto) {
-    this.usersService.create(user);
+    return this.usersService.create(user);
   }
 }
